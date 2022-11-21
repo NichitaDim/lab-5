@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    border: 6px solid orange;
+}
+
+.main {
+    margin: auto;
+    width: 1200px;
+    border: 6px solid red;
+}
+
+.boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid blue;
+}
+
+.box {
+    flex: 1;
+    border: 4px solid green;
+    background-color: aqua;
+    font-size: 2em;
+    text-align: center;
+}
+
+.largeBox {
+    flex: 4 !important;
+}
+
+.solitaryBox {
+    flex: unset;
+    width: 100%;
+}

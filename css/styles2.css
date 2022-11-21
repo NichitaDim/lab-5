@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.titreprincipal {
+    font-weight: bold;
+    font-size: 2em;
+    color: red;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    width: calc(min(100%, 1200px));
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+
+.headerbuffer {
+    height: 60px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: calc(min(100%, 1200px));
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.footerbuffer {
+    height: 45px;
+}
+
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.largeBox {
+    flex: 2 !important;
+}
+
+.box {
+    background-color: lightgrey;
+    font-size: 1em;
+    text-align: justify;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: solid 1px slategray;
+}
+
+.box img { 
+    width: 100%;
+}
+
+.solitaryBox {
+    flex: unset;
+    width: 100%;
+}
+
+.o1 {
+    order: 1;
+}
+
+.o2 {
+    order: 2;
+    background-color: white;
+}
+
+.o3 {
+    order: 3;
+}
+
+
+@media screen and (min-width: 800px) {
+    .boxContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .box {
+        flex: 1;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .box img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        float: right;
+        width: 50%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+}
